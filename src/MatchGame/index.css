@@ -1,0 +1,132 @@
+.bg-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-bg.png');
+  background-size: cover;
+  height: 100vh;
+}
+.nav-below-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.display-image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.display-image {
+  height: 380px;
+  margin-top: 30px;
+  width: 650px;
+  margin-left: 30px;
+}
+
+.tabs-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 10px;
+}
+.style-1 {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.button-style {
+  margin-top: 20px;
+  border: 0px none transparent;
+  background-color: transparent;
+  color: white;
+
+  font-size: 22px;
+}
+.card-image {
+  height: 100px;
+  width: 120px;
+}
+.image-button {
+  background-color: transparent;
+  border: 0px none transparent;
+}
+.small-images-list-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 700px;
+  flex-wrap: wrap;
+
+  list-style-type: none;
+}
+.styling-for-tab-1 {
+  border-bottom: 2px solid yellow;
+  color: yellow;
+  font-weight: bold;
+}
+.styling-for-tab-2 {
+  border-bottom: 2px solid yellow;
+  color: yellow;
+  font-weight: bold;
+}
+.styling-for-tab-3 {
+  border-bottom: 2px solid yellow;
+  color: yellow;
+  font-weight: bold;
+}
+.result-view-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-score-card-lg-bg.png');
+  background-size: cover;
+  height: 80vh;
+
+  width: 600px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 120px;
+}
+.result-bg-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.trophy-image {
+  height: 350px;
+}
+.image-play-again-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.reset-image {
+  margin-right: 10px;
+}
+.play-again-button {
+  background-color: #cf60c8;
+  border-radius: 10px;
+  border: 0px none transparent;
+  color: white;
+  font-weight: bold;
+
+  padding: 10px;
+}
+.para-your-score-text {
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+  padding: 4px;
+}
+.para-your-score {
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+}

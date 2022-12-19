@@ -1,0 +1,33 @@
+.nav-container {
+  background-color: #2c0e3a;
+  height: 12vh;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.scores-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  color: white;
+  font-family: 'roboto';
+}
+.timer-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.website-logo {
+  height: 50px;
+}
+.timer-image {
+  height: 20px;
+  margin-right: 10px;
+  margin-left: 20px;
+}

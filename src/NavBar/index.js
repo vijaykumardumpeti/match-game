@@ -12,7 +12,11 @@ export default class NavBar extends Component {
           src="https://assets.ccbp.in/frontend/react-js/match-game-website-logo.png"
         />
         <li className="scores-container">
-          <p>score: {score}</p>
+          <div className="score-container">
+            <p>score: </p>
+            <p>{score}</p>
+          </div>
+
           <div className="timer-container">
             <img
               className="timer-image"
@@ -26,3 +30,4 @@ export default class NavBar extends Component {
     )
   }
 }
+

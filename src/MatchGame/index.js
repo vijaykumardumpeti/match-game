@@ -330,10 +330,12 @@ export default class MatchGame extends Component {
 
   onPlayAgain = () => {
     this.setState({
-      isTimeRunning: true,
       score: 0,
+      isTimeRunning: true,
+
       time: 60,
     })
+    this.intervalId = setInterval(this.elapsedTime, 1000)
   }
 
   render() {
@@ -367,17 +369,17 @@ export default class MatchGame extends Component {
       view = (
         <>
           <div className="nav-below-container">
-            <div className="display-image-container">
-              <div key={randomObjectImageObject.id}>
+            <ul className="display-image-container">
+              <li key={randomObjectImageObject.id}>
                 <img
                   className="display-image"
-                  alt="images"
+                  alt="match"
                   src={randomObjectImageObject.imageUrl}
                 />
-              </div>
-            </div>
+              </li>
+            </ul>
 
-            <div className="tabs-container">
+            <ul className="tabs-container">
               {tabsList.map(eachObject => (
                 <TabItem
                   key={eachObject.tabId}
@@ -388,7 +390,7 @@ export default class MatchGame extends Component {
                   styling3={styling3}
                 />
               ))}
-            </div>
+            </ul>
             <ul className="small-images-list-container">
               {filteredList.map(eachObject => (
                 <ButtonImage
@@ -404,7 +406,7 @@ export default class MatchGame extends Component {
     } else {
       view = (
         <div className="result-bg-container">
-          <div className="result-view-container">
+          <li className="result-view-container">
             <img
               className="trophy-image"
               alt="trophy"
@@ -426,16 +428,16 @@ export default class MatchGame extends Component {
                 <p>PLAY AGAIN</p>
               </div>
             </button>
-          </div>
+          </li>
         </div>
       )
     }
 
     return (
-      <div className="bg-container">
+      <ul className="bg-container">
         <NavBar time={time} score={score} />
         {view}
-      </div>
+      </ul>
     )
   }
 }

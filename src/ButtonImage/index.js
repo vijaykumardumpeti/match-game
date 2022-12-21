@@ -4,7 +4,7 @@ import './index.css'
 export default class ButtonImage extends Component {
   render() {
     const {key, eachObject, checkSameClickedOrNot} = this.props
-    const {id, imageUrl} = eachObject
+    const {id, thumbnailUrl} = eachObject
 
     this.onCheckSameClickedOrNot = () => {
       checkSameClickedOrNot(id)
@@ -18,7 +18,7 @@ export default class ButtonImage extends Component {
             className="image-button"
             type="button"
           >
-            <img className="card-image" alt="" src={imageUrl} />
+            <img className="card-image" alt="thumbnail" src={thumbnailUrl} />
           </button>
         </li>
       </>

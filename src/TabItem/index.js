@@ -28,7 +28,7 @@ export default class TabItem extends Component {
     }
 
     return (
-      <div key={key}>
+      <li key={key}>
         <button
           onClick={this.changeTheState}
           className={`button-style ${text}`}
@@ -36,7 +36,7 @@ export default class TabItem extends Component {
         >
           {displayText}
         </button>
-      </div>
+      </li>
     )
   }
 }
